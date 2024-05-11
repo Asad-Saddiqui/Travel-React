@@ -18,10 +18,10 @@ function Search() {
             children: (
                 <>
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Input placeholder="Basic usage" />
-                        <RangePicker showTime />
-                        <Input placeholder="Basic usage" />
-                        <Button type="primary">Search</Button>
+                        <Input placeholder="" style={{margin:"5px"}} />
+                        <RangePicker showTime style={{ margin: "5px" }} />
+                        <Input placeholder="" style={{ margin: "5px" }} />
+                        <Button type="primary" style={{ margin: "5px" }}>Search</Button>
                     </div>
                 </>
             ),
@@ -32,10 +32,10 @@ function Search() {
             children: (
                 <>
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Input placeholder="Basic usage" />
-                        <RangePicker showTime />
-                        <Input placeholder="Basic usage" />
-                        <Button type="primary">Search</Button>
+                        <Input placeholder="Basic usage" style={{ margin: "5px" }} />
+                        <RangePicker showTime style={{ margin: "5px" }} />
+                        <Input placeholder="Basic usage" style={{ margin: "5px" }} />
+                        <Button type="primary" style={{ margin: "5px" }}>Search</Button>
                     </div>
                 </>
             ),
@@ -46,10 +46,10 @@ function Search() {
             children: (
                 <>
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Input placeholder="Basic usage" />
-                        <RangePicker showTime />
-                        <Input placeholder="Basic usage" />
-                        <Button type="primary">Search</Button>
+                        <Input placeholder="Basic usage" style={{ margin: "5px" }} />
+                        <RangePicker showTime style={{ margin: "5px" }} />
+                        <Input placeholder="Basic usage" style={{ margin: "5px" }} />
+                        <Button type="primary" style={{ margin: "5px" }}>Search</Button>
                     </div>
                 </>
             )
@@ -60,10 +60,10 @@ function Search() {
             children: (
                 <>
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Input placeholder="Basic usage" />
-                        <RangePicker showTime />
-                        <Input placeholder="Basic usage" />
-                        <Button type="primary">Search</Button>
+                        <Input placeholder="Basic usage" style={{ margin: "5px" }} />
+                        <RangePicker showTime style={{ margin: "5px" }} />
+                        <Input placeholder="Basic usage" style={{ margin: "5px" }} />
+                        <Button type="primary" style={{ margin: "5px" }}>Search</Button>
                     </div>
                 </>
             )
@@ -74,10 +74,10 @@ function Search() {
             children: (
                 <>
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Input placeholder="Basic usage" />
-                        <RangePicker showTime />
-                        <Input placeholder="Basic usage" />
-                        <Button type="primary">Search</Button>
+                        <Input placeholder="Basic usage" style={{ margin: "5px" }} />
+                        <RangePicker showTime  style={{margin:"5px"}}/>
+                        <Input placeholder="Basic usage" style={{ margin: "5px" }} />
+                        <Button type="primary" style={{ margin: "5px" }}>Search</Button>
                     </div>
                 </>
             )
