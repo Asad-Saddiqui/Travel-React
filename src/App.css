@@ -111,4 +111,51 @@
   }
 }
 
+.Package-container {}
+
+.Package {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* margin-top: 20px; */
+}
+
+.pakegName {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 5px 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 3px 5px;
+  color: gray;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.pakegName:hover {
+  background-color: #d7e7f2;
+}
+
+.pakegName_ {
+  background-color: #d7e7f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px 0px 5px 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  border: 2px solid black;
+  padding: 3px 5px;
+  color: gray;
+  letter-spacing: 1px;
+  font-size: 13px;
+}
+
+.ant-select-selector {
+  background-color: #d7e7f2;
+}
+
 /* Navbar End */

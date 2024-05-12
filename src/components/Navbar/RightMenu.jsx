@@ -10,7 +10,7 @@ const LeftMenu = ({ mode }) => {
                 <Button style={{ backgroundColor: '#f0f0f0', color: 'rgba(0, 0, 0, 0.65)' }} shape="round" icon={<DownloadOutlined />} >
                     Get the app
                 </Button>
-                <Link style={{ marginLeft: "20px", color: "white" }}>Supports</Link>
+                <Link to="/helpcenter" style={{ marginLeft: "20px", color: "white" }}>Supports</Link>
                 <Link style={{ marginLeft: "20px", color: "white" }}>Trips</Link>
                 <Link style={{ marginLeft: "20px", color: "white", marginRight: "40px" }} to="/login">Sigin</Link>
             </div>

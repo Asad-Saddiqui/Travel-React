@@ -4,7 +4,7 @@ import LeftMenu from "./LeftMenu";
 import RightMenu from "./RightMenu";
 import { MenuOutlined } from "@ant-design/icons";
 import { useLocation } from "react-router-dom";
-
+import "./index.css";
 const Navbar = () => {
     const [visible, setVisible] = useState(false);
     const showDrawer = () => {

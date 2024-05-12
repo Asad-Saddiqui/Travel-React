@@ -3,28 +3,24 @@ import { Tabs } from 'antd';
 import { Input } from 'antd';
 import { Button, Flex } from 'antd';
 import { DatePicker, Space } from 'antd';
-import { Card } from 'antd';
+import { Select } from 'antd';
 
+import Package from '../Search/Package';
+import Stay from '../Search/Stay';
 const { RangePicker } = DatePicker;
-
+const { Option } = Select;
 function Search() {
+
     const onChange = (key) => {
         console.log(key);
     };
+
+
     const items = [
         {
             key: '1',
             label: 'Stays',
-            children: (
-                <>
-                    <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Input placeholder="" style={{margin:"5px"}} />
-                        <RangePicker showTime style={{ margin: "5px" }} />
-                        <Input placeholder="" style={{ margin: "5px" }} />
-                        <Button type="primary" style={{ margin: "5px" }}>Search</Button>
-                    </div>
-                </>
-            ),
+            children: <Stay />
         },
         {
             key: '2',
@@ -59,12 +55,7 @@ function Search() {
             label: 'Packages',
             children: (
                 <>
-                    <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Input placeholder="Basic usage" style={{ margin: "5px" }} />
-                        <RangePicker showTime style={{ margin: "5px" }} />
-                        <Input placeholder="Basic usage" style={{ margin: "5px" }} />
-                        <Button type="primary" style={{ margin: "5px" }}>Search</Button>
-                    </div>
+                    <Package />
                 </>
             )
         },
@@ -75,7 +66,7 @@ function Search() {
                 <>
                     <div style={{ display: "flex", justifyContent: "space-between" }}>
                         <Input placeholder="Basic usage" style={{ margin: "5px" }} />
-                        <RangePicker showTime  style={{margin:"5px"}}/>
+                        <RangePicker showTime style={{ margin: "5px" }} />
                         <Input placeholder="Basic usage" style={{ margin: "5px" }} />
                         <Button type="primary" style={{ margin: "5px" }}>Search</Button>
                     </div>
