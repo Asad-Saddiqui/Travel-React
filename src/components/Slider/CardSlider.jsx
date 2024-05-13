@@ -1,75 +1,157 @@
 import { Card } from 'antd'
 import { Image } from 'antd';
 import React from 'react'
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
+import './styles.css';
+
+// import required modules
+import { Pagination } from 'swiper/modules';
 
 function CardSlider() {
   return (
-    <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
-      <div style={{ width: "85%", padding: "10px" }}>
-        <h2 style={{ marginTop: "20px" }}>Explore stays in trending destinations</h2>
 
-        <div style={{ marginTop: "20px", display: "flex" }}>
-          <Card
-
-            bordered={false}
-            style={{
-              width: 250,
+    
+          <Swiper
+            slidesPerView={4}
+            // spaceBetween={30}
+            pagination={{
+              clickable: true,
             }}
+            modules={[Pagination]}
+            className="mySwiper"
           >
-            <Image
-              width="100%"
-              src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-            />
-            <h3>title</h3>
-            <p>Card content</p>
-          </Card>
-          <Card
+            <SwiperSlide><Card
 
-            bordered={false}
-            style={{
-              width: 250,
-            }}
-          >
-            <Image
-              width="100%"
-              src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-            />
-            <h3>title</h3>
-            <p>Card content</p>
-          </Card>
-          <Card
+              bordered={false}
+              style={{
+                width: 250,
+              }}
+            >
+              <Image
+                width="100%"
+                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+              />
+              <h3>title</h3>
+              <p>Card content</p>
+            </Card></SwiperSlide>
+            <SwiperSlide><Card
 
-            bordered={false}
-            style={{
-              width: 250,
-            }}
-          >
-            <Image
-              width="100%"
-              src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-            />
-            <h3>title</h3>
-            <p>Card content</p>
-          </Card>
-          <Card
+              bordered={false}
+              style={{
+                width: 250,
+              }}
+            >
+              <Image
+                width="100%"
+                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+              />
+              <h3>title</h3>
+              <p>Card content</p>
+            </Card></SwiperSlide>
+            <SwiperSlide><Card
 
-            bordered={false}
-            style={{
-              width: 250,
-            }}
-          >
-            <Image
-              width="100%"
-              src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-            />
-            <h3>title</h3>
-            <p>Card content</p>
-          </Card>
+              bordered={false}
+              style={{
+                width: 250,
+              }}
+            >
+              <Image
+                width="100%"
+                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+              />
+              <h3>title</h3>
+              <p>Card content</p>
+            </Card></SwiperSlide>
+            <SwiperSlide><Card
 
-        </div>
-      </div>
+              bordered={false}
+              style={{
+                width: 250,
+              }}
+            >
+              <Image
+                width="100%"
+                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+              />
+              <h3>title</h3>
+              <p>Card content</p>
+            </Card></SwiperSlide>
+            <SwiperSlide><Card
 
-    </div>
+              bordered={false}
+              style={{
+                width: 250,
+              }}
+            >
+              <Image
+                width="100%"
+                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+              />
+              <h3>title</h3>
+              <p>Card content</p>
+            </Card></SwiperSlide>
+            <SwiperSlide><Card
+
+              bordered={false}
+              style={{
+                width: 250,
+              }}
+            >
+              <Image
+                width="100%"
+                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+              />
+              <h3>title</h3>
+              <p>Card content</p>
+            </Card></SwiperSlide>
+            <SwiperSlide><Card
+
+              bordered={false}
+              style={{
+                width: 250,
+              }}
+            >
+              <Image
+                width="100%"
+                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+              />
+              <h3>title</h3>
+              <p>Card content</p>
+            </Card></SwiperSlide>
+            <SwiperSlide><Card
+
+              bordered={false}
+              style={{
+                width: 250,
+              }}
+            >
+              <Image
+                width="100%"
+                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+              />
+              <h3>title</h3>
+              <p>Card content</p>
+            </Card></SwiperSlide>
+            <SwiperSlide><Card
+
+              bordered={false}
+              style={{
+                width: 250,
+              }}
+            >
+              <Image
+                width="100%"
+                src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
+              />
+              <h3>title</h3>
+              <p>Card content</p>
+            </Card></SwiperSlide>
+          </Swiper>
   )
 }
 

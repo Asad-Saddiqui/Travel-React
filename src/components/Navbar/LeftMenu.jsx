@@ -23,10 +23,10 @@ const LeftMenu = () => {
                         <Link to="/Vacation-Packages" style={{ backgroundColor: "white" }}>Packages</Link>
                     </div>
                     <div style={{ height: "40px", marginTop: "3px", padding: "5px 15px" }}>
-                        <Link style={{ backgroundColor: "white" }}>Stays</Link>
+                        <Link to="/Hotels" style={{ backgroundColor: "white" }}>Stays</Link>
                     </div>
                     <div style={{ height: "40px", marginTop: "3px", padding: "5px 15px" }}>
-                        <Link style={{ backgroundColor: "white" }}>Cars</Link>
+                        <Link to="/Cars" style={{ backgroundColor: "white" }}>Cars</Link>
                     </div>
                     <div style={{ height: "40px", marginTop: "3px", padding: "5px 15px" }}>
                         <Link style={{ backgroundColor: "white" }}>Flights</Link>

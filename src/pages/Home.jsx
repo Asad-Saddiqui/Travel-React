@@ -10,8 +10,18 @@ function Home() {
     return (
         <>
             <Navbar />
+            <br></br>
             <Search />
-            <CardSlider />
+            <div style={{ display: "flex", justifyContent: "center",  width: "100%" }}>
+                <div style={{ width: "85%", padding: "10px" }}>
+                    <h2 style={{ marginTop: "20px" }}>Explore stays in trending destinations</h2>
+
+                    <div style={{ marginTop: "20px", display: "flex" }}>
+                        <CardSlider />
+                    </div>
+                </div>
+
+            </div>
             <ImageView />
             <HelpView />
             <AppFooter />

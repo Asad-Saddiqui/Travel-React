@@ -3,7 +3,7 @@ import { Layout, Button, Drawer } from "antd";
 import LeftMenu from "./LeftMenu";
 import RightMenu from "./RightMenu";
 import { MenuOutlined } from "@ant-design/icons";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./index.css";
 const Navbar = () => {
     const [visible, setVisible] = useState(false);
@@ -25,7 +25,7 @@ const Navbar = () => {
             <Layout>
                 <Layout.Header className="nav-header">
                     <div className="logo">
-                        <h3 className="brand-font" style={{ color: "white" }}>Travels</h3>
+                        <h3 className="brand-font" style={{ color: "white" }}><Link to="/">Travels</Link></h3>
                     </div>
                     <div className="navbar-menu">
                         <div className="leftMenu">

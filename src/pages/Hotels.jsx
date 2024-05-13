@@ -1,18 +1,30 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import AppFooter from '../components/AppFooter/AppFooter'
-import Package from '../components/Search/Package'
-import { Card, Image } from 'antd'
+import Stay from '../components/Search/Stay'
 import CardSlider from '../components/Slider/CardSlider'
+import { Card } from 'antd'
+import AppFooter from '../components/AppFooter/AppFooter'
 
-function VacationPackage() {
+function Hotels() {
     return (
         <>
             <Navbar />
-            <div style={{ display: "flex", justifyContent: "center", width: "100%", marginTop: "20px", marginBottom: "20px" }}>
+            <div style={{ display: "flex", justifyContent: "center", width: "100%", marginTop: "20px", }}>
                 <div style={{ width: "80%", marginTop: "20px", marginBottom: "20px" }}>
                     <h2>Search Vacation Packages</h2>
-                    <Package />
+                    <Stay />
+                </div>
+            </div>
+            <div style={{ display: "flex", justifyContent: "center", width: "100%", marginBottom: "20px" }}>
+                <div style={{ width: "80%", marginBottom: "20px" }}>
+                    <h1>Featured travel</h1>
+                    <br>
+                    </br>
+                    <h2>Family hotel deals</h2>
+                    <br></br>
+                    <p>With hotel offers for the most kid-friendly vacation spots you can book today—and be on your way!Terms and conditions</p>
+                    <CardSlider />
+
                 </div>
             </div>
             <div style={{ display: "flex", justifyContent: "center", width: "100%", marginTop: "4px", marginBottom: "20px" }}>
@@ -26,6 +38,8 @@ function VacationPackage() {
                             }}
                         >
                             <div style={{ width: "100%", height: "100px", backgroundImage: "url(https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png)", backgroundRepeat: "no repeat", backgroundSize: "cover" }}>
+                                <h3 style={{ color: "white", marginTop: "70px" }} > title</h3>
+                                <p style={{ color: "white" }}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus earum illo eserunt unde!</p>
                             </div>
                             <p> aut doloremque, tenetur aliquam illum enim sequi libero!</p>
                         </Card>
@@ -37,6 +51,8 @@ function VacationPackage() {
                             }}
                         >
                             <div style={{ width: "100%", height: "100px", backgroundImage: "url(https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png)", backgroundRepeat: "no repeat", backgroundSize: "cover" }}>
+                                <h3 style={{ color: "white", marginTop: "70px" }} > title</h3>
+                                <p style={{ color: "white" }}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus earum illo eserunt unde!</p>
                             </div>
                             <p> aut doloremque, tenetur aliquam illum enim sequi libero!</p>
                         </Card>
@@ -48,6 +64,8 @@ function VacationPackage() {
                             }}
                         >
                             <div style={{ width: "100%", height: "100px", backgroundImage: "url(https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png)", backgroundRepeat: "no repeat", backgroundSize: "cover" }}>
+                                <h3 style={{ color: "white", marginTop: "70px" }} > title</h3>
+                                <p style={{ color: "white" }}>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus earum illo eserunt unde!</p>
                             </div>
                             <p> aut doloremque, tenetur aliquam illum enim sequi libero!</p>
                         </Card>
@@ -55,42 +73,9 @@ function VacationPackage() {
                 </div >
 
             </div >
-            <div style={{ display: "flex", justifyContent: "center", width: "100%", marginTop: "4px", marginBottom: "20px" }}>
-                <div style={{ width: "85%" }}>
-                    <CardSlider />
-                </div >
-
-            </div >
-            <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
-                <div style={{ width: "85%", padding: "10px" }}>
-                    <h3 >Here to help keep you on the move</h3>
-                    <div style={{ display: "flex", width: "100%", border: "1px solid gray", justifyContent: "space-between" }}>
-
-                        <Image
-                            width="37%"
-                            height="250px"
-
-                            src="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png"
-                        />
-
-
-
-
-                        <div
-                            style={{ padding: "20px", width: "55%", height: "250px" }}>
-                            <h3>title</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae ad, tempore nihil, temporibus asperiores eaque at perspiciatis ratione facere delectus obcaecati odit aliquid pariatur nostrum rerum iure? Molestiae, asperiores impedit.</p>
-                        </div>
-
-
-
-                    </div>
-                </div>
-
-            </div>
             <AppFooter />
         </>
     )
 }
 
-export default VacationPackage
+export default Hotels
