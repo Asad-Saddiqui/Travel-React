@@ -7,6 +7,9 @@ import HelpCenter from './pages/HelpCenter';
 import VacationPackage from './pages/Vacation-Package';
 import Hotels from './pages/Hotels';
 import Cars from './pages/Cars';
+import Flights from './pages/Flights';
+import Cruises from './pages/Cruises';
+import Activities from './pages/Activities';
 function App() {
   return (
     <>
@@ -16,6 +19,9 @@ function App() {
           <Route path='/login' element={<Login />} />
           <Route path='/helpcenter' element={<HelpCenter />} />
           <Route path='/Cars' element={<Cars />} />
+          <Route path='/Flights' element={<Flights />} />
+          <Route path='/Cruises' element={<Cruises />} />
+          <Route path='/Activities' element={<Activities />} />
           <Route path='/Hotels' element={<Hotels />} />
           <Route path='/Vacation-Packages' element={<VacationPackage />} />
         </Routes>

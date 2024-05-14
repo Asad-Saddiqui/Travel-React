@@ -16,6 +16,8 @@ const LeftMenu = () => {
                 <div style={{
                     backgroundColor: "white",
                     width: "200px",
+                    maxHeight: "300px",
+                    overFlow: "scroll",
                     display: links ? "block" : "none",
                     boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)" // Add box shadow
                 }}>
@@ -29,8 +31,14 @@ const LeftMenu = () => {
                         <Link to="/Cars" style={{ backgroundColor: "white" }}>Cars</Link>
                     </div>
                     <div style={{ height: "40px", marginTop: "3px", padding: "5px 15px" }}>
-                        <Link style={{ backgroundColor: "white" }}>Flights</Link>
+                        <Link to="/Flights" style={{ backgroundColor: "white" }}>Flights</Link>
                     </div>
+                    {/* <div style={{ height: "40px", marginTop: "3px", padding: "5px 15px" }}>
+                        <Link to="/Cruises" style={{ backgroundColor: "white" }}>Cruises</Link>
+                    </div> */}
+                    {/* <div style={{ height: "40px", marginTop: "3px", padding: "5px 15px" }}>
+                        <Link to="/Activities" style={{ backgroundColor: "white" }}>Things to Do</Link>
+                    </div> */}
                     <br></br>
                 </div>
 

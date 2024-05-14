@@ -196,6 +196,7 @@ function Package() {
                         color: "#d9d9d9",
                         borderRadius: "5px",
                         display: "flex",
+                        backgroundColor: "white",
                         paddingLeft: "5px",
                         alignItems: "center"
                     }} onClick={showModal} ><div><UserOutlined />{travelsvalue ? <>{totalAdults + totalChildren} Travelers,{travelsvalue.length} Room</> : "Click  to open popup"}</div></div>
