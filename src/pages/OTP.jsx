@@ -6,7 +6,8 @@ import { withStyles } from 'react-jss';
 import { Alert, Button, Divider, Input } from 'antd';
 import Navbar from '../components/Navbar';
 import { Link } from 'react-router-dom';
-
+import { Flex, Typography } from 'antd';
+const { Title } = Typography;
 const loginPageStyles = theme => ({
     loginCard: {
         boxShadow: '0 2px 20px 3px rgb(0 0 0 / 6%)',
@@ -97,7 +98,7 @@ const inputStyles = theme => ({
     },
 });
 
-function Login(props) {
+function OTP(props) {
     const classes = props.classes;
     // const history = useHistory();
 
@@ -135,6 +136,12 @@ function Login(props) {
         setFormErrors(errors);
         if (!errors.length) setSuccess(true);
     }
+    const onChange = (text) => {
+        console.log('onChange:', text);
+    };
+    const sharedProps = {
+        onChange,
+    };
 
     return <>
         <Navbar />
@@ -147,31 +154,20 @@ function Login(props) {
                     <span>Well Come To Travelocity</span>
                 </div>
 
-                <h1 className={classes.cardHeader} style={{ marginBottom: "10px" }}>Log in</h1>
+                <h1 className={classes.cardHeader} style={{ marginBottom: "30px" }}>One Time OTP</h1>
 
                 <div className="form">
-
                     <form>
 
 
-
-
-                        <div name="email" style={{ marginBottom: "10px" }} validate={emailValidate}>
+                        <div name="otp" validate={passwordValidate}>
                             <label>
-                                <span>Email</span>
-                                <Input value={email} onChange={(e) => setEmail(e.target.value)} />
+                                <Input.OTP mask="🔒" {...sharedProps} />
                             </label>
                         </div>
 
-                        <div name="password" validate={passwordValidate}>
-                            <label>
-                                <span>Password</span>
-                                <Input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                            </label>
-                        </div>
-
-                        <div style={{ marginTop: '10px' }}>
-                            <Button type="primary" fullWidth>Log in</Button>
+                        <div style={{ marginTop: '30px' }}>
+                            <Button type="primary" fullWidth>Verify account</Button>
                         </div>
 
                     </form>
@@ -179,7 +175,7 @@ function Login(props) {
                 </div>
 
                 <Divider />
-                Create an account. <Link to="/signup">Signup</Link>
+                Already have and account. <Link to="/login">login</Link>
 
 
             </div>
@@ -187,4 +183,4 @@ function Login(props) {
 
     </>
 }
-export default Login = withStyles(loginPageStyles)(Login);
+export default OTP = withStyles(loginPageStyles)(OTP);

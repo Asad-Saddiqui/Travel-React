@@ -36,9 +36,9 @@ const LeftMenu = () => {
                     <div style={{ height: "40px", marginTop: "3px", padding: "5px 15px" }}>
                         <Link to="/Cruises" style={{ backgroundColor: "white" }}>Cruises</Link>
                     </div>
-                    {/* <div style={{ height: "40px", marginTop: "3px", padding: "5px 15px" }}>
+                    <div style={{ height: "40px", marginTop: "3px", padding: "5px 15px" }}>
                         <Link to="/Activities" style={{ backgroundColor: "white" }}>Things to Do</Link>
-                    </div> */}
+                    </div>
                     <br></br>
                 </div>
 

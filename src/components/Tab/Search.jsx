@@ -7,6 +7,7 @@ import { Select } from 'antd';
 
 import Package from '../Search/Package';
 import Stay from '../Search/Stay';
+import Flights from '../Search/Flights';
 const { RangePicker } = DatePicker;
 const { Option } = Select;
 function Search() {
@@ -27,12 +28,7 @@ function Search() {
             label: 'Flights',
             children: (
                 <>
-                    <div style={{ display: "flex", justifyContent: "space-between" }}>
-                        <Input placeholder="Basic usage" style={{ margin: "5px" }} />
-                        <RangePicker showTime style={{ margin: "5px" }} />
-                        <Input placeholder="Basic usage" style={{ margin: "5px" }} />
-                        <Button type="primary" style={{ margin: "5px" }}>Search</Button>
-                    </div>
+                    <Flights />
                 </>
             ),
         },

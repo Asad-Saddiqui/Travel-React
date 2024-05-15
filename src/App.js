@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Signup from './pages/Signup';
+import OTP from './pages/OTP';
 import HelpCenter from './pages/HelpCenter';
 import VacationPackage from './pages/Vacation-Package';
 import Hotels from './pages/Hotels';
@@ -17,6 +19,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/login' element={<Login />} />
+          <Route path='/signup' element={<Signup />} />
+          <Route path='/otp' element={<OTP />} />
           <Route path='/helpcenter' element={<HelpCenter />} />
           <Route path='/Cars' element={<Cars />} />
           <Route path='/Flights' element={<Flights />} />

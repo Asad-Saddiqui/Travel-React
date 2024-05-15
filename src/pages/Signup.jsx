@@ -5,7 +5,7 @@ import { RiArrowLeftLine } from 'react-icons/ri';
 import { withStyles } from 'react-jss';
 import { Alert, Button, Divider, Input } from 'antd';
 import Navbar from '../components/Navbar';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const loginPageStyles = theme => ({
     loginCard: {
@@ -97,10 +97,12 @@ const inputStyles = theme => ({
     },
 });
 
-function Login(props) {
+function Signup(props) {
+    const navigate = useNavigate();
     const classes = props.classes;
     // const history = useHistory();
 
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [formErrors, setFormErrors] = useState([]);
@@ -140,14 +142,14 @@ function Login(props) {
         <Navbar />
         <div style={{ width: "100%", display: "flex", justifyContent: "center", }}>
 
-            <div className={classes.loginCard} style={{ marginTop: "50px" }}>
+            <div className={classes.loginCard} style={{ marginTop: "20px" }}>
 
                 <div style={{ display: 'flex', alignItems: 'center', fontWeight: 100, marginBottom: '25px' }}>
                     {/* <FaChessBishop style={{ marginRight: '10px', fontSize: '1.3em', color: '#83afe0' }} /> */}
                     <span>Well Come To Travelocity</span>
                 </div>
 
-                <h1 className={classes.cardHeader} style={{ marginBottom: "10px" }}>Log in</h1>
+                <h1 className={classes.cardHeader} style={{ marginBottom: "10px" }}>Sign up</h1>
 
                 <div className="form">
 
@@ -156,6 +158,12 @@ function Login(props) {
 
 
 
+                        <div name="name" style={{ marginBottom: "10px" }} validate={emailValidate}>
+                            <label>
+                                <span>Username</span>
+                                <Input value={name} onChange={(e) => setName(e.target.value)} />
+                            </label>
+                        </div>
                         <div name="email" style={{ marginBottom: "10px" }} validate={emailValidate}>
                             <label>
                                 <span>Email</span>
@@ -171,7 +179,9 @@ function Login(props) {
                         </div>
 
                         <div style={{ marginTop: '10px' }}>
-                            <Button type="primary" fullWidth>Log in</Button>
+                            <Button type="primary" onClick={()=> {
+                                navigate('/otp');
+                            }} fullWidth>Signup</Button>
                         </div>
 
                     </form>
@@ -179,7 +189,8 @@ function Login(props) {
                 </div>
 
                 <Divider />
-                Create an account. <Link to="/signup">Signup</Link>
+
+                Already have an account . <Link to="/login">Login</Link>
 
 
             </div>
@@ -187,4 +198,4 @@ function Login(props) {
 
     </>
 }
-export default Login = withStyles(loginPageStyles)(Login);
+export default Signup = withStyles(loginPageStyles)(Signup);

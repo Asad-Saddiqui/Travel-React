@@ -16,64 +16,65 @@ function HelpCenter() {
     />
 
     const onSearch = (value, _e, info) => console.log(info?.source, value);
-    let data = [{
-        title: "Flights",
-        content: [{
-            title: "abcd",
-            description: "askmdflkasdflk askdjf aksdf aksdjf akjsdf ajsdf "
-        }]
-    },
+    let data = [
         {
             title: "Flights",
             content: [{
-                title: "abcd",
-                description: "askmdflkasdflk askdjf aksdf aksdjf akjsdf ajsdf "
+                title: "Flight to Paris",
+                description: "Enjoy a luxurious flight to the romantic city of Paris. Experience world-class service and comfort."
             }]
         },
         {
-            title: "Flights",
+            title: "Hotels",
             content: [{
-                title: "abcd",
-                description: "askmdflkasdflk askdjf aksdf aksdjf akjsdf ajsdf "
+                title: "Luxury Suite at Grand Hotel",
+                description: "Indulge in opulence with our luxurious suites at the Grand Hotel. Experience unparalleled comfort and service."
             }]
         },
         {
-            title: "Flights",
+            title: "Tours",
+            content: [{
+                title: "Historical Tour of Rome",
+                description: "Embark on a fascinating historical journey through the ancient streets of Rome. Explore iconic landmarks and hidden gems."
+            }]
+        },
+        {
+            title: "Car Rentals",
             content: [
                 {
-                title: "lkjsalk",
-                description: "askmdflkasdflk askdjf aksdf aksdjf akjsdf ajsdf "
+                    title: "SUV Rental for Family Adventures",
+                    description: "Rent a spacious SUV for your family adventures. Enjoy ample space and comfort for long journeys."
                 },
                 {
-                title: "lksdjflask",
-                description: "askmdflkasdflk askdjf aksdf aksdjf akjsdf ajsdf "
+                    title: "Convertible for Stylish Getaways",
+                    description: "Cruise in style with a sleek convertible. Perfect for romantic getaways and scenic drives."
                 },
                 {
-                title: "lkasjdlas",
-                description: "askmdflkasdflk askdjf aksdf aksdjf akjsdf ajsdf "
+                    title: "Economy Car for Budget Travel",
+                    description: "Opt for an economy car for budget-friendly travel. Save money without compromising on quality."
                 },
                 {
-                title: "klasjd",
-                description: "askmdflkasdflk askdjf aksdf aksdjf akjsdf ajsdf "
+                    title: "Luxury Sedan for Business Trips",
+                    description: "Travel in sophistication with a luxury sedan. Impress clients and colleagues with premium comfort and style."
                 },
-        ]
+            ]
         },
         {
-            title: "Flights",
+            title: "Cruises",
             content: [{
-                title: "abcd",
-                description: "askmdflkasdflk askdjf aksdf aksdjf akjsdf ajsdf "
+                title: "Mediterranean Cruise",
+                description: "Set sail on a breathtaking Mediterranean cruise. Explore stunning coastal cities and picturesque islands."
             }]
         },
         {
-            title: "Flights",
+            title: "Activities",
             content: [{
-                title: "abcd",
-                description: "askmdflkasdflk askdjf aksdf aksdjf akjsdf ajsdf "
+                title: "Adventure Sports Package",
+                description: "Experience adrenaline-pumping adventure sports with our exciting package. Thrill-seekers will love this!"
             }]
         },
-    
-    ]
+    ];
+
     return (
         <>
             <Navbar />
@@ -100,7 +101,7 @@ function HelpCenter() {
                 </div>
 
             </div>
-            <AppFooter/>
+            <AppFooter />
 
         </>
     )
